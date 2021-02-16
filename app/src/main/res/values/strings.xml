@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GoogleBooksLibrary</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="action_back">Back</string>
+    <string name="action_search">Search</string>
+    <string name="submit_search">Submit</string>
+    <string name="search_favorites">Search</string>
+    <string name="book_favorites_title">Your Favorites:</string>
+    <string name="google_books">Google Books</string>
+    <string name="logo_description">Logo</string>
+    <string name="hint_search">Lets find your book</string>
+    <string name="button_submit">Submit</string>
+    <string name="book_title">Book Title</string>
+    <string name="book_category">Category</string>
+    <string name="published_date">Published Date</string>
+    <string name="book_page_coount">Page count</string>
+    <string name="book_price">Price</string>
+    <string name="book_authors">Authors</string>
+    <string name="prev_link">Preview</string>
+    <string name="buy_link">Buy</string>
+    <string name="book_description">Description</string>
+    <string name="action_favorites">Favorites</string>
+</resources>

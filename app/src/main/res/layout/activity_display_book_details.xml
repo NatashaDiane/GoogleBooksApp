@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DisplayBookDetailsActivity"
+    android:layout_centerVertical="true"
+    android:background="#AED6F1 ">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewDets"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="30dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp">
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/faveButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:mfb_type="heart"
+                android:layout_toEndOf="@id/shareButton"/>
+
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_share_black_24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="260dp" />
+
+            <ImageView
+                android:id="@+id/bookImageIdDets"
+                android:layout_below="@id/shareButton"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_margin="5dp"
+                android:background="@color/cardview_shadow_end_color" />
+
+            <TextView
+                android:id="@+id/bookTitleIdDets"
+                android:layout_below="@id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/bookImageIdDets"
+                android:paddingStart="5dp"
+                android:text="@string/book_title"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bookCategoryIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookTitleIdDets"
+                android:layout_toEndOf="@id/bookImageIdDets"
+                android:padding="5dp"
+                android:text="@string/book_category" />
+
+            <TextView
+                android:id="@+id/bookPublishedIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookCategoryIdDets"
+                android:layout_toEndOf="@id/bookImageIdDets"
+                android:padding="5dp"
+                android:text="@string/published_date" />
+
+            <TextView
+                android:id="@+id/bookPageCountIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookPublishedIdDets"
+                android:layout_toEndOf="@id/bookImageIdDets"
+                android:padding="5dp"
+                android:text="@string/book_page_coount" />
+
+            <TextView
+                android:id="@+id/bookPriceIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookPageCountIdDets"
+                android:layout_toEndOf="@id/bookImageIdDets"
+                android:background="#F39C12"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/book_price"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bookAuthorsIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookImageIdDets"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="@string/book_authors" />
+
+            <TextView
+                android:id="@+id/buttonPreviewIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookAuthorsIdDets"
+                android:layout_margin="5dp"
+                android:background="#3498DB"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="@string/prev_link"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/buttonBuyIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookAuthorsIdDets"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@id/buttonPreviewIdDets"
+                android:background="#3498DB"
+                android:paddingLeft="30dp"
+                android:paddingTop="5dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:text="@string/buy_link"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeView"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/cardview_shadow_end_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardviewDets"
+        app:layout_constraintVertical_bias="0.052">
+
+        <TextView
+            android:id="@+id/bookDescriptionIdDets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:maxLines="17"
+            android:padding="12dp"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical"
+            android:text="@string/book_description"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

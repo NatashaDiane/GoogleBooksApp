@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.natasha.googlebooksapp.activities.DisplayBooksActivity">
+
+    <item
+        android:id="@+id/action_search_display_books_page"
+        android:orderInCategory="100"
+        android:title="@string/search_favorites"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_white_24dp"/>
+
+    <item
+        android:id="@+id/action_favorites_display_books_page"
+        android:orderInCategory="100"
+        android:title="@string/action_favorites"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_favorite_white_24dp"/>
+
+
+</menu>

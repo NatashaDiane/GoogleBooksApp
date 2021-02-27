@@ -53,10 +53,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         String query = "SELECT * FROM " + Contract.TABLE_NAME;
         SQLiteDatabase dba = this.getReadableDatabase();
 
-        //For selection argument we are putting null because we want to get everything from the table
+        //For selection argument im putting null because i want to get everything from the table
         Cursor cursor = dba.rawQuery(query, null);
 
-        //because the cursor now have all the rows in the table we use the getCount() that the Cursor has which returns
+        //because the cursor now have all the rows in the table i use the getCount() that the Cursor has which returns
         // the number of items in the table.
         totalFavorites = cursor.getCount();
 
@@ -66,9 +66,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     }
 
-    //a method to insert contents to our database
+    //a method to insert contents to the database
     public void addFavorite(Book book){
-        //getwritableDatabase allows us to write into the database
+        //getwritableDatabase allows to write into the database
         SQLiteDatabase db = this.getWritableDatabase();
 
         //ContentValues is a key value pair object
@@ -86,7 +86,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         db.insert(Contract.TABLE_NAME, null, values);
 
-        //this will just let us know that something has been added
+        //this will just let me know that something has been added
         Log.v("Added to favorites list", "Yeeeeeees!");
         db.close();
     }
@@ -95,7 +95,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void deleteFavorite(String title){
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(Contract.TABLE_NAME, Contract.BOOK_TITLE + " = ?",new String[]{String.valueOf(title)});
-        //this will just let us know that something has been deleted
+        //this will just let me know that something has been deleted
         Log.v("Deleted Book: " + title , "Yeeeeeees!");
         db.close();
     }

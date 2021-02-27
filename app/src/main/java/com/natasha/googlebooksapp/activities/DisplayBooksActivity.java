@@ -101,7 +101,7 @@ public class DisplayBooksActivity extends AppCompatActivity {
         //Everytime this method is called it clears everything from the list and repopulate it
         bookList.clear();
 
-        //Our JsonObject request, this is from the volley library
+        //JsonObject request, this is from the volley library
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
                 Constants.URL_LEFT + searchTerm + Constants.URL_RIGHT, null, new Response.Listener<JSONObject>() {
             @Override

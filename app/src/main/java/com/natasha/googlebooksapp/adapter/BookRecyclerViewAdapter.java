@@ -79,7 +79,6 @@ public class BookRecyclerViewAdapter extends RecyclerView.Adapter<BookRecyclerVi
 
 
     //inner class
-    //we are implementing onClickListener here because we want to click the whole row and take us to another screen
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView title;

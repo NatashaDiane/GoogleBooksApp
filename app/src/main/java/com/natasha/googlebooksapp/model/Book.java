@@ -3,7 +3,7 @@ package com.natasha.googlebooksapp.model;
 import java.io.Serializable;
 
 //Represents the blueprint for a book
-//we are implementing Serializable so we can pass it around easily from one activity to another
+//implementing Serializable so i can pass it around easily from one activity to another
 public class Book implements Serializable {
     private static final long id = 1L;
 

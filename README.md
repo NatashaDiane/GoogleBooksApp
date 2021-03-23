@@ -1,4 +1,7 @@
 # GoogleBooksApp
+
+A fully functional Android application for book lovers out there, like me! 
+
 Application characteristics:
 Integrates with GoogleBooks API to get information about different kind of books depending on what
 the user searches for, by title or by author's name.

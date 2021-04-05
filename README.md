@@ -1,4 +1,4 @@
-# GoogleBooksApp
+# GoogleBooksApp 📚
 
 A fully functional Android application for book lovers out there, like me!
 

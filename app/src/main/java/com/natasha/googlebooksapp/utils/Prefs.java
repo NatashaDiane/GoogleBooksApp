@@ -3,8 +3,8 @@ package com.natasha.googlebooksapp.utils;
 import android.app.Activity;
 import android.content.SharedPreferences;
 
-//This class will allow us to saved searched book so whenever we open the app again
-//the last book that you've searched will show
+//This class will save a searched book so whenever a user open the app again
+//the last book that was searched will show
 public class Prefs {
     SharedPreferences sharedPreferences;
 
